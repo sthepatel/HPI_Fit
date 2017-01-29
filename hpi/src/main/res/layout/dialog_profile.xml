@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutProfileTopHalf"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <ImageButton
+            android:id="@+id/imgBtnProfileClose"
+            android:background="@android:color/transparent"
+            android:src="@drawable/close"
+            android:scaleType="fitCenter"
+            android:padding="3dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="42dp"
+            android:layout_height="42dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutProfilePic"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <info.smitpatel.hpifit.widgets.CircleImageView
+                android:id="@+id/circleImgViewProfilePic"
+                android:src="@android:color/white"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:id="@+id/txtProfileName"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutProfileBtmHalf"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/bg_w_bottom_border"
+                android:orientation="vertical"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtProfileUsernameTitle"
+                    android:text="@string/prompt_username"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="32sp" />
+
+                <TextView
+                    android:id="@+id/txtProfileUsernameValue"
+                    android:text="jteller"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/bg_w_bottom_border"
+                android:orientation="vertical"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtProfileAchievementsTitle"
+                    android:text="@string/achievements"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="32sp" />
+
+                <TextView
+                    android:id="@+id/txtProfileAchievementsValue"
+                    android:text="345"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtProfileLanguageTitle"
+                    android:text="@string/language"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="32sp" />
+
+                <TextView
+                    android:id="@+id/txtProfileLanguageValue"
+                    android:text="@string/locale_english"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="32sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

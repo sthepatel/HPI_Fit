@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <info.smitpatel.hpifit.widgets.CircleImageView
+            android:id="@+id/circleImgViewProfilePic"
+            android:src="@android:color/white"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <info.smitpatel.hpifit.widgets.CircleImageView
+            android:id="@+id/circleImgViewCamera"
+            android:src="@drawable/menu_camera_2"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtUserFullName"
+        android:text="Full Name"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#032a83</color>      // old primary: 2c70bb
+    <color name="colorPrimaryDark">#032a83</color>
+    <color name="colorAccent">#d8df39</color>
+
+    <color name="semi_white_bg">#80ffffff</color>
+    <color name="semi_white_bg_border">#CCffffff</color>
+</resources>

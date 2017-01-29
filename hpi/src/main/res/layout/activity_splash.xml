@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.smitpatel.hpifit.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutLoading"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:text="@string/log_in"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textColor="@drawable/btn_positive_txt_selector"
+        android:background="@drawable/btn_positive_bg_selector"
+        android:layout_above="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:textColor="@drawable/btn_positive_txt_selector"
+        android:background="@drawable/btn_positive_bg_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutLoginForm"
+        android:orientation="vertical"
+        android:background="@drawable/semi_white_bg"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:theme="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/txtUsername"
+                android:hint="@string/prompt_username"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:lines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:theme="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/eTxtPassword"
+                android:hint="@string/prompt_password"
+                android:textSize="20sp"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:lines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnLoginCancel"
+                android:text="@string/cancel"
+                android:textSize="20sp"
+                android:textColor="@drawable/btn_negative_txt_selector"
+                android:background="@drawable/btn_negative_bg_selector"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnLoginProceed"
+                android:text="@string/login_continue"
+                android:textSize="20sp"
+                android:textColor="@drawable/btn_positive_txt_selector"
+                android:background="@drawable/btn_positive_bg_selector"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

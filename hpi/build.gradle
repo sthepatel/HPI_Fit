@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "info.smitpatel.hpifit"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'android'
+            keyPassword 'adminAdmin'
+            storeFile file('../hpi/smitpatel_demo.jks')
+            storePassword 'adminAdmin'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.google.firebase:firebase-crash:10.0.1'
+    compile 'com.google.guava:guava:20.0'
+    compile 'com.android.support:design:25.1.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

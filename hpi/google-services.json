@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "51155066591",
+    "firebase_url": "https://hpifit.firebaseio.com",
+    "project_id": "hpifit",
+    "storage_bucket": "hpifit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51155066591:android:9e75c23aa3ee01ee",
+        "android_client_info": {
+          "package_name": "info.smitpatel.hpifit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51155066591-deb5v4pqkv2qjuein107fdejhej6guo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.smitpatel.hpifit",
+            "certificate_hash": "F6202D05BAC7C012B719F6B557F9107C5A97ECE0"
+          }
+        },
+        {
+          "client_id": "51155066591-ai2hev6s93032simgn6djcjvjcbkte48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL_WrGeAz2TLVRZgvxFQWWj9T1MYQGBic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51155066591-ai2hev6s93032simgn6djcjvjcbkte48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

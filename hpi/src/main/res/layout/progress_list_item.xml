@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/txtProgressDate"
+        android:text="07/12/2016"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/txtProgressSteps"
+        android:text="1546 steps"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/txtProgressMilestones"
+        android:text="5 milestones"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical|end"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+</LinearLayout>
