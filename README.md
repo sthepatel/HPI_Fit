@@ -2,6 +2,16 @@
 ===========
 This is a simple fitness app that will record your steps daily and provide feedback.
 
+**Notes**
+-------------
+> - This application relies on accelerometer sensor. If the device does not have the necessary hardware sensor, this application will not function properly.
+> - For the first time use, application will automatically **generate some fake data** to show in progress.
+
+**Screenshots**
+-------------
+![](https://s24.postimg.org/synxzy945/Screenshot_20170129_165548.png)![](https://s24.postimg.org/id42ny2sl/Screenshot_20170129_165552.png)![](https://s24.postimg.org/sbp1afc85/Screenshot_20170129_165600.png)![](https://s24.postimg.org/v76pv15lx/Screenshot_20170129_165717.png)![](https://s24.postimg.org/s1m44tmzp/Screenshot_20170129_165724.png)
+
+
 **Features**
 -------------
 > - Multi-user login
@@ -9,10 +19,6 @@ This is a simple fitness app that will record your steps daily and provide feedb
 > - History of all previous records
 > - Reminders to user if no activity for 1 hour
 
-**Notes**
--------------
-> - This application relies on accelerometer sensor. If the device does not have the necessary hardware sensor, this application will not function properly.
-> - For the first time use, application will automatically **generate some fake data** to show in progress.
 
 **How to use**
 -------------
