@@ -16,7 +16,7 @@ This is a simple fitness app that will record your steps daily and provide feedb
 
 **How to use**
 -------------
-1) Download and install the **HPI_Fit.apk** file located in **hpi** folder.  
+1) Download and install the **[HPI_Fit.apk](https://github.com/sthepatel/HPI_Fit/blob/master/hpi/HPI_Fit.apk)** file located in **[hpi](https://github.com/sthepatel/HPI_Fit/tree/master/hpi)** folder.  
 2) Open the application and use one of these two credentials:  
 
 Username|Password
