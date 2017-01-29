@@ -51,8 +51,8 @@ public class StepService extends Service implements SensorEventListener {
         String NO_ACTION = "299";
     }
 
-    private static final int MILESTONE_1000_FEET = 10;        // 10 for just testing
-//    private static final int MILESTONE_1000_FEET = 400;        // 400 steps == 1000 feet
+//    private static final int MILESTONE_1000_FEET = 10;        // 10 for just testing
+    private static final int MILESTONE_1000_FEET = 400;        // 400 steps == 1000 feet
 
     @Nullable
     @Override
